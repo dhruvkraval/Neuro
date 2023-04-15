@@ -1,0 +1,34 @@
+{
+  "quiz": [
+    {
+      "num": 1,
+      "question": "What should the quiz consist of?",
+      "answer": "Multiple choice questions",
+      "options": ["True", "False", "Not given", "All of the above"]
+    },
+    {
+      "num": 2,
+      "question": "How many questions should the quiz have?",
+      "answer": "5",
+      "options": ["3", "5", "7", "10"]
+    },
+    {
+      "num": 3,
+      "question": "What is the format for returning the quiz?",
+      "answer": "JSON string",
+      "options": ["XML string", "CSV file", "Text document", "None of the above"]
+    },
+    {
+      "num": 4,
+      "question": "What should be included in the JSON fields?",
+      "answer": "num, question, answer, options",
+      "options": ["num, question, answer", "question, answer, options", "num, answer, options", "None of the above"]
+    },
+    {
+      "num": 5,
+      "question": "What type of text should NOT be included in the JSON?",
+      "answer": "Anything other than the quiz information",
+      "options": ["Quiz instructions", "Title of quiz", "Author of quiz", "All of the above"]
+    }
+  ]
+}

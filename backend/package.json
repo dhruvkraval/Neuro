@@ -1,0 +1,27 @@
+{
+  "name": "neuro",
+  "version": "1.0.0",
+  "description": "Our entry for the 2023 Hack Iowa State Hackathon.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node seqList.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhruvkraval/Neuro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhruvkraval/Neuro/issues"
+  },
+  "homepage": "https://github.com/dhruvkraval/Neuro#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "FileReader": "^0.10.2",
+    "openai": "^3.2.1",
+    "youtube-transcript": "^1.0.5"
+  }
+}
