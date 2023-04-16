@@ -1,117 +1,94 @@
 {
-  "name": "Quantitative Trading",
+  "name": "Computational Biology",
   "children": [
     {
-      "name": "Fundamentals of Finance",
+      "name": "Biology Fundamentals",
       "children": [
         {
-          "name": "Financial Statements"
+          "name": "Molecular Biology"
         },
         {
-          "name": "Markets"
+          "name": "Genetics"
         },
         {
-          "name": "Instruments"
+          "name": "Cellular Biology"
         },
         {
-          "name": "Risk and Return"
-        },
-        {
-          "name": "Time Value of Money"
-        },
-        {
-          "name": "Diversification"
-        },
-        {
-          "name": "Portfolio Management"
-        },
-        {
-          "name": "Asset Allocation"
-        },
-        {
-          "name": "Capital Market Theory"
+          "name": "Evolutionary Biology"
         }
       ]
     },
     {
-      "name": "Introduction to Quantitative Trading",
+      "name": "Computer Science Fundamentals",
       "children": [
         {
-          "name": "Overview of Quantitative Trading"
+          "name": "Algorithms and Data Structures"
         },
         {
-          "name": "Statistical Analysis and Machine Learning"
+          "name": "Programming Languages"
         },
         {
-          "name": "Differences between Quantitative Trading and Traditional Trading"
+          "name": "Databases"
         },
         {
-          "name": "Approaches to Quantitative Trading"
+          "name": "Operating Systems"
+        },
+        {
+          "name": "Parallel and Distributed Computing"
         }
       ]
     },
     {
-      "name": "Quantitative Analysis",
+      "name": "Computational Methods for Biology",
       "children": [
         {
-          "name": "Statistical Analysis and Machine Learning Techniques"
+          "name": "Sequence Analysis"
         },
         {
-          "name": "Developing and Testing Trading Strategies"
+          "name": "Phylogenetic Analysis"
         },
         {
-          "name": "Quantitative Trading Strategies",
-          "children": [
-            {
-              "name": "Mean-Reversion"
-            },
-            {
-              "name": "Trend-Following"
-            },
-            {
-              "name": "Arbitrage"
-            }
-          ]
+          "name": "Structural Biology"
+        },
+        {
+          "name": "Systems Biology"
         }
       ]
     },
     {
-      "name": "Algorithmic Trading",
+      "name": "Applications of Computational Biology",
       "children": [
         {
-          "name": "Order Types"
+          "name": "Drug Discovery and Design"
         },
         {
-          "name": "Execution Strategies"
+          "name": "Personalized Medicine"
         },
         {
-          "name": "Risk Management"
+          "name": "Protein Folding and Design"
         },
         {
-          "name": "Developing and Backtesting Trading Algorithms"
+          "name": "Bioinformatics"
         },
         {
-          "name": "Trading Platforms and APIs"
+          "name": "Medical Image Processing"
         }
       ]
     },
     {
-      "name": "Advanced Topics",
+      "name": "Emerging Technologies",
       "children": [
         {
-          "name": "High-Frequency Trading"
+          "name": "CRISPR/Cas9"
         },
         {
-          "name": "Deep Learning"
+          "name": "Single-Cell Sequencing"
         },
         {
-          "name": "Natural Language Processing"
+          "name": "Nanopore Sequencing"
         },
         {
-          "name": "Applying Techniques to Trading Strategies and Risk Management"
-        },
-        {
-          "name": "Ethical and Regulatory Issues in Quantitative Trading"
+          "name": "Artificial Intelligence and Machine Learning"
         }
       ]
     }

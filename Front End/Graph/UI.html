@@ -93,7 +93,7 @@
             width: 50%;
             text-align: center;
             font-family: Montserrat;
-            padding-top: 400px; /* modified */
+            padding-top:100px; /* modified */
         }
         .form__field {
             font-family: inherit;
@@ -123,7 +123,7 @@
             transition: 0.2s;
             font-size: 1rem;
             color: #ffc9f4;
-            padding-top: 380px; /* modified */
+            padding-top: 80px; /* modified */
         }
         .form__field:focus {
             padding-bottom: 6px;
@@ -149,8 +149,73 @@
             margin: auto;
             display: block;
         }
+        /* CSS */
+        .button-85 {
+        padding: 0.6em 2em;
+        border: none;
+        outline: none;
+        color: rgb(255, 255, 255);
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        font-size:20;
+        }
+
+        .button-85:before {
+        content: "";
+        background: linear-gradient(
+            45deg,
+            #ff0000,
+            #ffc9f4,
+            #7a00ff,
+            #ff00c8,
+            #e03997
+        );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing-button-85 20s linear infinite;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+        }
+
+        @keyframes glowing-button-85 {
+        0% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 400% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
+        }
+
+        .button-85:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #222;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+        }
     </style>
     <body>
+        <div>
         <script type="module">
     
             import define from "./index.js";
@@ -159,12 +224,12 @@
             const runtime = new Runtime();
             const main = runtime.module(define, Inspector.into(document.body));
             
-            </script>
-    
+        </script>
+        </div>
     </body>
-
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <div class="container">
-        <img src="Front End/Graph/assets/Logo3.png" height="250" width="250" style="float: left;">
+        <img src="Logo4.png" height="250" width="250" style="float: left;">
         <div class = "text"> <h1 ></h1> </div>
         </head>
 `   </div>
@@ -175,7 +240,9 @@
         
         <div class="form__group field">
             <input type="input" class="form__field" placeholder="Name" name="name" id='name' required/>
-            <label for="name" class="form__label">Enter a topic</label>
+            <label for="name" class="form__label">Paste a video link to start learning...</label>
+            <br><br/>
+            <button onclick="window.location.href = '/Users/gurubazawada/Desktop/neuro/Neuro/Front End/Quiz/index.html';" class="button-85">Enter</button>
         </div>
     </div>
 </html>
