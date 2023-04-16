@@ -1,51 +1,96 @@
 {
- "name": "flare",
- "children": [
-  {
-   "name": "analytics",
-   "children": [
+  "name": "Computational Biology",
+  "children": [
     {
-     "name": "cluster",
-     "children": [
+      "name": "Biology Fundamentals",
+      "children": [
         {
-         "name": "analytics",
-         "children": [
-          {
-           "name": "cluster",
-           "children": [
-            {
-             "name": "analytics",
-             "children": [
-              {
-               "name": "cluster",
-               "children": [
-                  {
-                   "name": "analytics",
-                   "children": [
-                    {
-                     "name": "cluster",
-                     "children": [
-                
-                      {"name": "MergeEdge", "value": 743}
-                     ]
-                    }
-                ]
-                }
-                
-                ]
-              }
-          ]
-          }
-          
-          ]
-          }
+          "name": "Molecular Biology"
+        },
+        {
+          "name": "Genetics"
+        },
+        {
+          "name": "Cellular Biology"
+        },
+        {
+          "name": "Evolutionary Biology"
+        }
       ]
-      }
-      
+    },
+    {
+      "name": "Computer Science Fundamentals",
+      "children": [
+        {
+          "name": "Algorithms and Data Structures"
+        },
+        {
+          "name": "Programming Languages"
+        },
+        {
+          "name": "Databases"
+        },
+        {
+          "name": "Operating Systems"
+        },
+        {
+          "name": "Parallel and Distributed Computing"
+        }
+      ]
+    },
+    {
+      "name": "Computational Methods for Biology",
+      "children": [
+        {
+          "name": "Sequence Analysis"
+        },
+        {
+          "name": "Phylogenetic Analysis"
+        },
+        {
+          "name": "Structural Biology"
+        },
+        {
+          "name": "Systems Biology"
+        }
+      ]
+    },
+    {
+      "name": "Applications of Computational Biology",
+      "children": [
+        {
+          "name": "Drug Discovery and Design"
+        },
+        {
+          "name": "Personalized Medicine"
+        },
+        {
+          "name": "Protein Folding and Design"
+        },
+        {
+          "name": "Bioinformatics"
+        },
+        {
+          "name": "Medical Image Processing"
+        }
+      ]
+    },
+    {
+      "name": "Emerging Technologies",
+      "children": [
+        {
+          "name": "CRISPR/Cas9"
+        },
+        {
+          "name": "Single-Cell Sequencing"
+        },
+        {
+          "name": "Nanopore Sequencing"
+        },
+        {
+          "name": "Artificial Intelligence and Machine Learning"
+        }
       ]
     }
-]
-}
-
-]
+  ]
 }

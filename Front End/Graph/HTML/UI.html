@@ -81,7 +81,10 @@
         }
 
         body {
+            position: relative;
             background-color: #0a0543;
+            z-index: 999;
+
         }
         .form__group {
             position: relative;
@@ -90,7 +93,7 @@
             width: 50%;
             text-align: center;
             font-family: Montserrat;
-            padding-top: 400px; /* modified */
+            padding-top:100px; /* modified */
         }
         .form__field {
             font-family: inherit;
@@ -120,7 +123,7 @@
             transition: 0.2s;
             font-size: 1rem;
             color: #ffc9f4;
-            padding-top: 380px; /* modified */
+            padding-top: 80px; /* modified */
         }
         .form__field:focus {
             padding-bottom: 6px;
@@ -160,7 +163,7 @@
         user-select: none;
         -webkit-user-select: none;
         touch-action: manipulation;
-        font-size:large;
+        font-size:20;
         }
 
         .button-85:before {
@@ -211,18 +214,35 @@
         border-radius: 10px;
         }
     </style>
-
+    <body>
+        <div>
+        <script type="module">
+    
+            import define from "./index.js";
+            import {Runtime, Library, Inspector} from "./runtime.js";
+            
+            const runtime = new Runtime();
+            const main = runtime.module(define, Inspector.into(document.body));
+            
+        </script>
+        </div>
+    </body>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <div class="container">
-        <img src="Front End/Graph/assets/Logo3.png" height="250" width="250" style="float: left;">
+        <img src="Logo4.png" height="250" width="250" style="float: left;">
         <div class = "text"> <h1 ></h1> </div>
         </head>
 `   </div>
+
+
     <div style="position: relative;">
+
+        
         <div class="form__group field">
             <input type="input" class="form__field" placeholder="Name" name="name" id='name' required/>
-            <label for="name" class="form__label">Enter a topic</label>
+            <label for="name" class="form__label">Paste a video link to start learning...</label>
             <br><br/>
-            <button class="button-85">Learn</button>
+            <button onclick="window.location.href = '/Users/gurubazawada/Desktop/neuro/Neuro/Front End/Quiz/index.html';" class="button-85">Enter</button>
         </div>
     </div>
 </html>

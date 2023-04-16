@@ -12,7 +12,7 @@ const openai = new OpenAIApi(new Configuration({
 var summarizedText = "";
 
 // Set the path of the local text file
-const filePath = "summary.txt";
+const filePath = "backend/summary.txt";
 
 function getString(){
     // Read the contents of the file
