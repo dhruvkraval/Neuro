@@ -1,51 +1,119 @@
 {
- "name": "flare",
- "children": [
-  {
-   "name": "analytics",
-   "children": [
+  "name": "Quantitative Trading",
+  "children": [
     {
-     "name": "cluster",
-     "children": [
+      "name": "Fundamentals of Finance",
+      "children": [
         {
-         "name": "analytics",
-         "children": [
-          {
-           "name": "cluster",
-           "children": [
-            {
-             "name": "analytics",
-             "children": [
-              {
-               "name": "cluster",
-               "children": [
-                  {
-                   "name": "analytics",
-                   "children": [
-                    {
-                     "name": "cluster",
-                     "children": [
-                
-                      {"name": "MergeEdge", "value": 743}
-                     ]
-                    }
-                ]
-                }
-                
-                ]
-              }
-          ]
-          }
-          
-          ]
-          }
+          "name": "Financial Statements"
+        },
+        {
+          "name": "Markets"
+        },
+        {
+          "name": "Instruments"
+        },
+        {
+          "name": "Risk and Return"
+        },
+        {
+          "name": "Time Value of Money"
+        },
+        {
+          "name": "Diversification"
+        },
+        {
+          "name": "Portfolio Management"
+        },
+        {
+          "name": "Asset Allocation"
+        },
+        {
+          "name": "Capital Market Theory"
+        }
       ]
-      }
-      
+    },
+    {
+      "name": "Introduction to Quantitative Trading",
+      "children": [
+        {
+          "name": "Overview of Quantitative Trading"
+        },
+        {
+          "name": "Statistical Analysis and Machine Learning"
+        },
+        {
+          "name": "Differences between Quantitative Trading and Traditional Trading"
+        },
+        {
+          "name": "Approaches to Quantitative Trading"
+        }
+      ]
+    },
+    {
+      "name": "Quantitative Analysis",
+      "children": [
+        {
+          "name": "Statistical Analysis and Machine Learning Techniques"
+        },
+        {
+          "name": "Developing and Testing Trading Strategies"
+        },
+        {
+          "name": "Quantitative Trading Strategies",
+          "children": [
+            {
+              "name": "Mean-Reversion"
+            },
+            {
+              "name": "Trend-Following"
+            },
+            {
+              "name": "Arbitrage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Algorithmic Trading",
+      "children": [
+        {
+          "name": "Order Types"
+        },
+        {
+          "name": "Execution Strategies"
+        },
+        {
+          "name": "Risk Management"
+        },
+        {
+          "name": "Developing and Backtesting Trading Algorithms"
+        },
+        {
+          "name": "Trading Platforms and APIs"
+        }
+      ]
+    },
+    {
+      "name": "Advanced Topics",
+      "children": [
+        {
+          "name": "High-Frequency Trading"
+        },
+        {
+          "name": "Deep Learning"
+        },
+        {
+          "name": "Natural Language Processing"
+        },
+        {
+          "name": "Applying Techniques to Trading Strategies and Risk Management"
+        },
+        {
+          "name": "Ethical and Regulatory Issues in Quantitative Trading"
+        }
       ]
     }
-]
-}
-
-]
+  ]
 }

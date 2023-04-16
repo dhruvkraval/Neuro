@@ -33,8 +33,8 @@ function _1(md){return(
       .data(links)
       .join("line");
   
-    const node = svg.append("g")
-      .attr("fill", "#fff")
+      const node = svg.append("g")
+      .attr("fill", "#ffc9f4")
       .attr("stroke", "#000")
       .attr("stroke-width", 1.5)
       .selectAll("circle")
@@ -46,7 +46,30 @@ function _1(md){return(
       .call(drag(simulation))
       .on("click", (event, d) => {
         window.open(`https://www.youtube.com/results?search_query=${d.data.name}`, "_blank");
+      })
+      .on("mouseover", function() {
+        d3.select(this).style("filter", "url(#glow)");
+      })
+      .on("mouseout", function() {
+        d3.select(this).style("filter", null);
       });
+    
+    const defs = svg.append("defs");
+    
+    const filter = defs.append("filter")
+      .attr("id", "glow");
+    
+    filter.append("feGaussianBlur")
+      .attr("stdDeviation", "3")
+      .attr("result", "coloredBlur");
+    
+    const feMerge = filter.append("feMerge");
+    
+    feMerge.append("feMergeNode")
+      .attr("in", "coloredBlur");
+    
+    feMerge.append("feMergeNode")
+      .attr("in", "SourceGraphic");
   
       const label = svg.append("g")
       .attr("class", "labels")
@@ -58,8 +81,18 @@ function _1(md){return(
       .style("font-size", "20px")
       .style("fill", "white") // set the font color to white
       .style("text-anchor", "middle")
-      .style("pointer-events", "none")
-      .attr("y", 25); // add an offset to the y-coordinate
+      .attr("y", 25) // add an offset to the y-coordinate
+      .attr("visibility", "hidden"); // hide the labels by default
+    
+    node.on("mouseover", function(event, d) {
+        d3.select(this).style("filter", "url(#glow)"); // highlight the node
+        d3.select(".labels text:nth-child(" + (d.index+1) + ")") // select the corresponding label
+          .attr("visibility", "visible"); // show the label
+    }).on("mouseout", function(event, d) {
+        d3.select(this).style("filter", null); // unhighlight the node
+        d3.select(".labels text:nth-child(" + (d.index+1) + ")") // select the corresponding label
+          .attr("visibility", "hidden"); // hide the label
+    });
   
     node.append("title")
       .text(d => d.data.name)

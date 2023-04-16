@@ -81,7 +81,10 @@
         }
 
         body {
+            position: relative;
             background-color: #0a0543;
+            z-index: 999;
+
         }
         .form__group {
             position: relative;
@@ -147,24 +150,24 @@
             display: block;
         }
     </style>
+    <body>
+        <script type="module">
+    
+            import define from "./index.js";
+            import {Runtime, Library, Inspector} from "./runtime.js";
+            
+            const runtime = new Runtime();
+            const main = runtime.module(define, Inspector.into(document.body));
+            
+            </script>
+    
+    </body>
 
     <div class="container">
         <img src="Front End/Graph/assets/Logo3.png" height="250" width="250" style="float: left;">
         <div class = "text"> <h1 ></h1> </div>
         </head>
 `   </div>
-<body>
-    <script type="module">
-
-        import define from "./index.js";
-        import {Runtime, Library, Inspector} from "./runtime.js";
-        
-        const runtime = new Runtime();
-        const main = runtime.module(define, Inspector.into(document.body));
-        
-        </script>
-
-</body>
 
 
     <div style="position: relative;">

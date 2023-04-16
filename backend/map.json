@@ -1,47 +1,117 @@
 {
-  "name": "HTML",
+  "name": "Quantitative Trading",
   "children": [
     {
-      "name": " CSS",
+      "name": "Fundamentals of Finance",
       "children": [
         {
-          "name": " JavaScript",
+          "name": "Financial Statements"
+        },
+        {
+          "name": "Markets"
+        },
+        {
+          "name": "Instruments"
+        },
+        {
+          "name": "Risk and Return"
+        },
+        {
+          "name": "Time Value of Money"
+        },
+        {
+          "name": "Diversification"
+        },
+        {
+          "name": "Portfolio Management"
+        },
+        {
+          "name": "Asset Allocation"
+        },
+        {
+          "name": "Capital Market Theory"
+        }
+      ]
+    },
+    {
+      "name": "Introduction to Quantitative Trading",
+      "children": [
+        {
+          "name": "Overview of Quantitative Trading"
+        },
+        {
+          "name": "Statistical Analysis and Machine Learning"
+        },
+        {
+          "name": "Differences between Quantitative Trading and Traditional Trading"
+        },
+        {
+          "name": "Approaches to Quantitative Trading"
+        }
+      ]
+    },
+    {
+      "name": "Quantitative Analysis",
+      "children": [
+        {
+          "name": "Statistical Analysis and Machine Learning Techniques"
+        },
+        {
+          "name": "Developing and Testing Trading Strategies"
+        },
+        {
+          "name": "Quantitative Trading Strategies",
           "children": [
             {
-              "name": " jQuery",
-              "children": [
-                {
-                  "name": " Responsive Design",
-                  "children": [
-                    {
-                      "name": " Node.js",
-                      "children": [
-                        {
-                          "name": " Express.js",
-                          "children": [
-                            {
-                              "name": " MongoDB",
-                              "children": [
-                                {
-                                  "name": " React",
-                                  "children": [
-                                    {
-                                      "name": " Deployment",
-                                      "children": []
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
+              "name": "Mean-Reversion"
+            },
+            {
+              "name": "Trend-Following"
+            },
+            {
+              "name": "Arbitrage"
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "Algorithmic Trading",
+      "children": [
+        {
+          "name": "Order Types"
+        },
+        {
+          "name": "Execution Strategies"
+        },
+        {
+          "name": "Risk Management"
+        },
+        {
+          "name": "Developing and Backtesting Trading Algorithms"
+        },
+        {
+          "name": "Trading Platforms and APIs"
+        }
+      ]
+    },
+    {
+      "name": "Advanced Topics",
+      "children": [
+        {
+          "name": "High-Frequency Trading"
+        },
+        {
+          "name": "Deep Learning"
+        },
+        {
+          "name": "Natural Language Processing"
+        },
+        {
+          "name": "Applying Techniques to Trading Strategies and Risk Management"
+        },
+        {
+          "name": "Ethical and Regulatory Issues in Quantitative Trading"
         }
       ]
     }
